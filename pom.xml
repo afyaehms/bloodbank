@@ -4,7 +4,7 @@
 
 	<groupId>org.openmrs.module</groupId>
 	<artifactId>bloodbank</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Bloodbank</name>
 	<description>Bloodbank module</description>
@@ -12,20 +12,18 @@
 	<url>http://openmrs.org</url>
 
 	<distributionManagement>
-        <!-- use the following if you're not using a snapshot version. -->
-            <repository>
-                <id>shimla-nexus</id>
-                <name>Shimla nexus repo</name>
-                <url>http://hospdev.hispindia.org:8081/nexus/content/repositories/version3.1-releases/</url>
-            </repository>
-        <!-- use the following if you ARE using a snapshot version. -->
-            <snapshotRepository>
-                <id>shimla-nexus</id>
-                <name>Shimla nexus repo</name>
-                <url>http://hospdev.hispindia.org:8081/nexus/content/repositories/version3.1-releases/</url>
-                <uniqueVersion>false</uniqueVersion>
-             </snapshotRepository>
-     </distributionManagement>
+		<!-- use the following if you're not using a snapshot version. -->
+		<repository>
+			<id>afyaehms-snapshots</id>
+			<url>http://afyaehms.org:8081/nexus/content/repositories/releases</url>
+		</repository>
+		<!-- use the following if you ARE using a snapshot version. -->
+		<snapshotRepository>
+			<id>afyaehms-snapshots</id>
+			<url>http://afyaehms.org:8081/nexus/content/repositories/snapshots</url>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
      
 	<modules>
 		<module>api</module>
